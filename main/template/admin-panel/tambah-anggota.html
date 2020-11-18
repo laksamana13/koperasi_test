@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "../adp-menu/adp-header.html" %}
+  </head>
+  <body>
+    <div class="wrapper">
+      {% include "../adp-menu/adp-body.html" %}
+      <!--form member-->
+      <div class="w-100 p-0 position-relative">
+        <!-- navbar -->
+        <nav class="d-flex justify-content-between navbars">
+          <div class="btn p-2">
+            <i class="fas fa-bars" id="menu-toggle"></i>
+          </div>
+          <div class="d-flex">
+            <div class="py-2 px-2">
+              <i
+                class="btn fas fa-bell"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item bg-primary text-light" href="#"
+                  >Transaksi Pinjaman Baru</a
+                >
+                <a class="dropdown-item" href="#">Anggota Baru Ditambahkan</a>
+                <a class="dropdown-item" href="#">Transaksi Simpanan Baru</a>
+              </div>
+              <i class="btn fas fa-sign-out-alt"></i>
+            </div>
+          </div>
+        </nav>
+        <!-- end navbar -->
+
+        <div class="main-content pt-5">
+          <div class="m-3 shadow p-3 bg-light">
+            <h3 class="d-block mb-3">Tambah Anggota</h3>
+
+            <form action="">
+              <div
+                class="mb-2 d-flex mt-3 justify-content-between border-bottom"
+              >
+                <span class="titlesubform">Data Pribadi</span>
+                <i
+                  class="btn fas fa-angle-down showsubform"
+                  areahid="datapribadi"
+                ></i>
+              </div>
+              <div id="datapribadi">
+                <div class="form-group row mb-2">
+                  <label
+                    for="namalengkap"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Nama Lengkap</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="text"
+                      name="namalengkap"
+                      class="form-control"
+                      id="namalengkap"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="ttl"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Tempat Tanggal Lahir</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="text"
+                      name="ttl"
+                      class="form-control"
+                      id="ttl"
+                      placeholder="Kediri, 17 Juli 1964"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="jk"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Jenis Kelamin</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <select class="form-control" name="jk" id="jk">
+                      <option>Pilih Jenis Kelamin</option>
+                      <option value="">Laki-Laki</option>
+                      <option value="">Perempuan</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="nohp"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >No. HP</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="text"
+                      name="nohp"
+                      class="form-control"
+                      id="nohp"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="pekerjaan"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Pekerjaan</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="text"
+                      name="pekerjaan"
+                      class="form-control"
+                      id="pekerjaan"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="mb-2 d-flex mt-3 justify-content-between border-bottom"
+              >
+                <span class="titlesubform">Alamat</span>
+                <i
+                  class="btn fas fa-angle-down showsubform"
+                  areahid="alamatanggota"
+                ></i>
+              </div>
+              <div id="alamatanggota">
+                <div class="form-group row mb-2">
+                  <label
+                    for="provinsi"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Provinsi</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="text"
+                      name="provinsi"
+                      class="form-control"
+                      id="provinsi"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="kabko"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Kab / Kota</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="text"
+                      name="kabko"
+                      class="form-control"
+                      id="kabko"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="kecamatan"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Kecamatan</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="text"
+                      name="kecamatan"
+                      class="form-control"
+                      id="kecamatan"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="desa"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Desa / Kelurahan</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="text"
+                      name="desa"
+                      class="form-control"
+                      id="desa"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="mb-2 d-flex mt-3 justify-content-between border-bottom"
+              >
+                <span class="titlesubform">Koperasi</span>
+                <i
+                  class="btn fas fa-angle-down showsubform"
+                  areahid="koperasidipil"
+                ></i>
+              </div>
+              <div id="koperasidipil">
+                <div class="form-group row mb-2">
+                  <label
+                    for="koperasi"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Nama Koperasi</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <select class="form-control" name="koperasi" id="koperasi">
+                      <option>Pilih Nama Koperasi</option>
+                      <option value="">Alamin</option>
+                      <option value="">Arrozak</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="jabatan"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Jabatan</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <select class="form-control" name="jabatan" id="jabatan">
+                      <option>Pilih Jabatan</option>
+                      <option value="">Anggota</option>
+                      <option value="">Kordes</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="status"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Status Anggota</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <select class="form-control" name="status" id="status">
+                      <option>Pilih Status</option>
+                      <option value="">Aktif</option>
+                      <option value="">Terkendala</option>
+                      <option value="">Tidak Aktif</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="tglmasuk"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Tanggal bergabung</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="date"
+                      name="tglmasuk"
+                      class="form-control"
+                      id="tglmasuk"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="tglberhenti"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Tanggal berhenti</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <input
+                      type="date"
+                      name="tglberhenti"
+                      class="form-control"
+                      id="tglberhenti"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label
+                    for="tglberhenti"
+                    class="col-sm-12 col-md-3 col-form-label font-weight-light"
+                    >Keterangan berhenti</label
+                  >
+                  <div class="col-sm-12 col-md-9">
+                    <textarea
+                      class="form-control"
+                      id="tglberhenti"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-sm-block d-md-flex justify-content-end mt-3">
+                <div class="col-sm-12 col-md-3 p-0 mr-md-3">
+                  <a href="#" class="btn btn-secondary btn-block">Batal</a>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-sm-2 mt-md-0 p-0">
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Simpan
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--endform member-->
+    </div>
+  </body>
+  {% include "../adp-menu/adp-footer.html" %}
+</html>

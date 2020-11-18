@@ -1,0 +1,244 @@
+.wrapper{
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+
+/* scrollbar width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* scrollbar track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* scrollbar handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #00d2ff;
+  background-image: linear-gradient(to right, #00ff91 0%, #3ad597 100%);
+}
+
+
+.bg-main{
+  background-color: #009F61 !important;
+}
+
+.bg-maindark{
+  background: rgba(0,0,0, 0.3);
+}
+
+ul{
+  list-style-type: none;
+  padding:0;
+}
+.bg-white{
+  background-color: #ffffff;
+}
+.font-xss{
+  font-size: 0.6rem;
+}
+
+
+
+/* ==================================================== NAVBAR ============================================ */
+.navbars{
+  position: absolute;
+  display: flex;
+  padding:0;
+  z-index: 1030;
+  background-color: #ffffff;
+  top:0;  
+  left: 0;
+  right: 0;
+}
+.logo-navbar{
+  width: 38px;
+  height: 36px;
+}
+/* ==================================================== END NAVBAR ========================================= */
+
+
+/* sidebar */
+.sidebar{
+  overflow: auto;
+  width: 280px !important;
+  height: 100vh;
+  margin-left: 0;
+  -webkit-transition: width .25s ease-out;
+  -moz-transition: width .25s ease-out;
+  -o-transition: width .25s ease-out;
+  transition: width .25s ease-out;
+  transition-delay: .3s;
+}
+.toggled{
+  width: 60px !important;
+}
+
+.hidden-item{
+  display: none;
+}
+
+.text-toggled{
+   margin-left: -17.4rem;
+}
+
+.vendor-title{
+  font-size: 1.5rem;
+}
+
+.foto-profil{
+  widows: 70px;
+  height: 70px;
+}
+
+.foto-profilsm{
+  widows: 40px;
+  height: 40px;
+}
+
+.title{
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.navitemLink:hover, .navitemCollapse:hover{
+  transition: .5s;
+  background: rgba(79, 255, 146, 0.2);  
+  color: #ffffff;
+  opacity: 1;
+}
+
+.navitemLink:focus, .navitemLink:active{
+  background: rgba(79, 255, 146, 0.2);
+  border-left: 5px solid #ffffff;
+  color: yellow !important;
+  box-sizing: border-box;
+}
+
+.navitemCollapsed{
+    background: rgba(79, 255, 146, 0.2);
+} 
+/* sidebar */
+
+
+/* content */
+.main-content{
+  background-color: #f4f6f9;
+  height: 100%;
+  overflow: auto;
+}
+/* content */
+
+
+/* LOGIN */
+body#login{
+  /* height: 100vh; */
+  position: relative;
+  height: 100%;
+  background-image: url('./img/bglogin.png');
+  background-repeat: repeat;
+}
+.login-container{
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    margin: 25px auto;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.login-container::before,.login-container::after{
+    content: "";
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 3.5px;left: 0;
+    background: #fff;
+    z-index: -1;
+    -webkit-transform: rotateZ(4deg);
+    -moz-transform: rotateZ(4deg);
+    -ms-transform: rotateZ(4deg);
+    border: 1px solid #ccc;
+}
+
+.login-container::after{
+    top: 5px;
+    z-index: -2;
+    -webkit-transform: rotateZ(-2deg);
+    -moz-transform: rotateZ(-2deg);
+    -ms-transform: rotateZ(-2deg);
+}
+.inputlogin{
+  display: block;
+  width: 100%;
+  padding: 10px 10px 5px 10px;
+  border: none;
+  border-bottom: 3px solid #3f3f3f75;
+}
+.inputlogin:focus{
+  outline: none;
+  border-bottom: 3px solid #009F61;
+  transition: .5s;
+}
+/* END LOGIN */
+
+
+
+
+/* Formanggota */
+.titlesubform{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* endForm */
+
+
+
+
+/* ANIMATION */
+
+.sidebarItemCollapse{
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); 
+  transition: transform .5s ease;
+}
+
+.CollapseReverse{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); 
+  transition: transform .5s ease;
+}
+
+.subformCollapse{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); 
+  transition: transform .5s ease;
+}
+/* END ANIMATION */
+
+
+
+
+
+
+
+
+/* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) } */
+/* @media (min-width:480px)  { smartphones, Android phones, landscape iPhone } */
+/* @media (min-width:600px)  { portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) } */
+/* @media (min-width:801px)  { tablet, landscape iPad, lo-res laptops ands desktops } */
+/* @media (min-width:1025px) { big landscape tablets, laptops, and desktops } */
+/* @media (min-width:1281px) { hi-res laptops and desktops } */

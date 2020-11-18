@@ -1,0 +1,279 @@
+<!-- sidebar -->
+<div class="sidebar bg-main shadow-lg text-light custom-scrollbar">
+  <div class="d-flex pl-2 py-1 border-bottom">
+    <img
+      src="/static/lib/img/logo.png"
+      alt="KOPERASI UNIWA"
+      class="logo-navbar"
+    />
+    <span
+      class="align-items-start vendor-title ml-2 font-weight-light hiddenlabel"
+      >KOPERASI</span
+    >
+  </div>
+  <!-- profil -->
+  <div class="d-flex flex-row border-bottom border-light pl-2 py-3">
+    <img
+      class="foto-profil rounded-circle"
+      id="fotoprofil"
+      alt="nama_user"
+      src="/static/lib/img/fotoprofil.jpg"
+    />
+    <div class="pt-2 pl-2 hiddenlabel">
+      <span class="m-0 d-block font-weight-bold">AndiNa</span>
+      <span class="title">Super User</span>
+    </div>
+  </div>
+  <!-- end profil -->
+  <ul class="list-group border-0 list-group-flush py-2">
+    <li>
+      <a
+        href="#"
+        class="btn btn-block text-left text-light navitemLink rounded-0"
+      >
+        <i class="fas fa-columns"></i>
+        <span class="item-sm-hidden">Dashboard</span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="btn btn-block text-left text-light navitemLink rounded-0"
+      >
+        <i class="fas fa-landmark"></i>
+        <span class="item-sm-hidden">Koperasi</span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="btn btn-block text-left text-light navitemLink rounded-0"
+      >
+        <i class="fas fa-user-tag"></i>
+        <span class="item-sm-hidden">Kordes</span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="btn btn-block text-left text-light navitemLink rounded-0"
+      >
+        <i class="fas fa-users"></i>
+        <span class="item-sm-hidden">Anggota</span>
+      </a>
+    </li>
+
+    <li
+      class="navitem-collapse"
+      area-collapse="simpananCollapse"
+      btn-collapse="pemasukanCl"
+    >
+      <span
+        class="btn btn-block text-left d-flex justify-content-between navitemCollapse"
+      >
+        <span>
+          <i class="fas fa-hand-holding-usd"></i>
+          <span class="item-sm-hidden">Pemasukan</span>
+        </span>
+        <i class="fas fa-angle-left mt-1 tg-cl" id="pemasukanCl"></i>
+      </span>
+    </li>
+    <div
+      class="pl-4 text-sm-left bg-maindark hidden-item"
+      id="simpananCollapse"
+    >
+      <ul>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-money-bill-alt"></i>
+            <span class="item-sm-hidden">Simpanan</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href=""
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-coins"></i>
+            <span class="item-sm-hidden">Data Per Bulan</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <li
+      class="navitem-collapse"
+      area-collapse="pengeluaranCollapse"
+      btn-collapse="pengeluaranCl"
+    >
+      <span
+        class="btn btn-block text-left d-flex justify-content-between navitemCollapse"
+      >
+        <span>
+          <i class="fas fa-file-invoice-dollar"></i>
+          <span class="item-sm-hidden">Pengeluaran</span>
+        </span>
+        <i class="fas fa-angle-left mt-1 tg-cl" id="pengeluaranCl"></i>
+      </span>
+    </li>
+    <div
+      class="pl-4 text-sm-left bg-maindark hidden-item"
+      id="pengeluaranCollapse"
+    >
+      <ul>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-comments-dollar"></i>
+            <span class="item-sm-hidden">Pinjaman</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href=""
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span class="item-sm-hidden">BPBKW</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <li
+      class="navitem-collapse"
+      area-collapse="laporanCollapse"
+      btn-collapse="laporanCl"
+    >
+      <span
+        class="btn btn-block text-left d-flex justify-content-between navitemCollapse"
+      >
+        <span>
+          <i class="fas fa-paste"></i>
+          <span class="item-sm-hidden">Laporan</span>
+        </span>
+        <i class="fas fa-angle-left mt-1 tg-cl" id="laporanCl"></i>
+      </span>
+    </li>
+    <div class="pl-4 text-sm-left bg-maindark hidden-item" id="laporanCollapse">
+      <ul class="">
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-book"></i>
+            <span class="item-sm-hidden">Buku Besar Kas</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-money-check-alt"></i>
+            <span class="item-sm-hidden">SHU</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-copy"></i>
+            <span class="item-sm-hidden">Laporan Bulanan</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-calendar-check"></i>
+            <span class="item-sm-hidden">Arus Kas</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-balance-scale"></i>
+            <span class="item-sm-hidden">Neraca Lajur</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-server"></i>
+            <span class="item-sm-hidden">Neraca Komparatif</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-id-card-alt"></i>
+            <span class="item-sm-hidden">SHU Karyawan</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-exchange-alt"></i>
+            <span class="item-sm-hidden">Pendapatan & Biaya</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <li
+      class="navitem-collapse"
+      area-collapse="masterCollapse"
+      btn-collapse="masterCl"
+    >
+      <span
+        class="btn btn-block text-left d-flex justify-content-between navitemCollapse"
+      >
+        <div>
+          <i class="fas fa-database"></i>
+          <span class="item-sm-hidden">Master Data</span>
+        </div>
+        <i class="fas fa-angle-left mt-1 tg-cl" id="masterCl"></i>
+      </span>
+    </li>
+    <div class="pl-4 text-sm-left bg-maindark hidden-item" id="masterCollapse">
+      <ul>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-chart-line"></i>
+            <span class="item-sm-hidden">Monitoring</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-unlock-alt"></i>
+            <span class="item-sm-hidden">Lupa Password</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </ul>
+</div>
+<!-- end sidebar -->
