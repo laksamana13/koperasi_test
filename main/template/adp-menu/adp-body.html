@@ -28,11 +28,14 @@
   <ul class="list-group border-0 list-group-flush py-2">
     <li>
       <a
-        href="#"
-        class="btn btn-block text-left text-light navitemLink rounded-0"
+        href="/"
+        class="{% if active_page == 'dashboard' %} navitemLinkactive {%else%} navitemLink {%endif%} btn btn-block text-left text-light rounded-0"
+        id="dashboardtab"
       >
         <i class="fas fa-columns"></i>
-        <span class="item-sm-hidden">Dashboard</span>
+        <span class="item-sm-hidden">
+          Dashboard
+        </span>
       </a>
     </li>
 
@@ -58,8 +61,8 @@
 
     <li>
       <a
-        href="#"
-        class="btn btn-block text-left text-light navitemLink rounded-0"
+        href="/anggota"
+        class="{% if active_page == 'anggota' %} navitemLinkactive {%else%} navitemLink {%endif%} btn btn-block text-left text-light rounded-0"
       >
         <i class="fas fa-users"></i>
         <span class="item-sm-hidden">Anggota</span>
@@ -88,7 +91,7 @@
       <ul>
         <li>
           <a
-            href="#"
+            href="/simpanan"
             class="btn btn-block text-left text-light navitemLink rounded-0"
           >
             <i class="fas fa-money-bill-alt"></i>

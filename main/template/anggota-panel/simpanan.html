@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "../agp-menu/agp-header.html" %}
+  </head>
+  <body data-titlepage="simpanan">
+    <div class="wrapper">
+      {% include "../agp-menu/agp-body.html" %}
+      <!--form member-->
+      <div class="w-100 p-0 position-relative">
+        <!-- navbar -->
+        <nav class="d-flex justify-content-between navbars">
+          <div class="btn p-2">
+            <i class="fas fa-bars" id="menu-toggle"></i>
+          </div>
+          <div class="d-flex">
+            <div class="py-2 px-2">
+              <i
+                class="btn fas fa-bell"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item bg-primary text-light" href="#"
+                  >Transaksi Pinjaman Baru</a
+                >
+                <a class="dropdown-item" href="#">Anggota Baru Ditambahkan</a>
+                <a class="dropdown-item" href="#">Transaksi Simpanan Baru</a>
+              </div>
+              <i class="btn fas fa-sign-out-alt"></i>
+            </div>
+          </div>
+        </nav>
+        <!-- end navbar -->
+
+        <div class="main-content pt-5">
+          <div class="m-3 shadow p-3 bg-white rounded">
+            <h3 class="d-block mb-3">Simpanan Anda</h3>
+            <table
+              class="bg-white"
+              id="tabelanggota"
+              data-toggle="table"
+              data-show-columns="true"
+              data-search="true"
+              data-show-toggle="true"
+              data-resizable="true"
+              data-pagination="true"
+            >
+              <thead>
+                <tr class="">
+                  <th scope="col" data-sortable="true">No</th>
+                  <th scope="col" data-sortable="true">Nomer Transaksi</th>
+                  <th scope="col" data-sortable="true">Jumlah Simpanan</th>
+                  <th scope="col" data-sortable="true">Jenis Simpanan</th>
+                  <th scope="col" data-sortable="true">Pada</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>0992</td>
+                  <td>Rp. 2000</td>
+                  <td>Wajib</td>
+                  <td>16 Januari 1999</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>0566</td>
+                  <td>Rp. 1000</td>
+                  <td>Pokok</td>
+                  <td>17 Januari 1999</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>0992</td>
+                  <td>Rp. 5000</td>
+                  <td>Pokok</td>
+                  <td>19 Janurai 2000</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+      </div>
+      <!--endform member-->
+    </div>
+  </body>
+  {% include "../agp-menu/agp-footer.html" %}
+</html>

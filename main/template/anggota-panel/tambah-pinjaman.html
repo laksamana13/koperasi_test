@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "../agp-menu/agp-header.html" %}
+  </head>
+  <body data-titlepage="tambahpinjaman">
+    <div class="wrapper">
+      {% include "../agp-menu/agp-body.html" %}
+      <!--form member-->
+      <div class="w-100 p-0 position-relative">
+        <!-- navbar -->
+        <nav class="d-flex justify-content-between navbars">
+          <div class="btn p-2">
+            <i class="fas fa-bars" id="menu-toggle"></i>
+          </div>
+          <div class="d-flex">
+            <div class="py-2 px-2">
+              <i
+                class="btn fas fa-bell"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item bg-primary text-light" href="#"
+                  >Transaksi Pinjaman Baru</a
+                >
+                <a class="dropdown-item" href="#">Anggota Baru Ditambahkan</a>
+                <a class="dropdown-item" href="#">Transaksi Simpanan Baru</a>
+              </div>
+              <i class="btn fas fa-sign-out-alt"></i>
+            </div>
+          </div>
+        </nav>
+        <!-- end navbar -->
+
+        <div class="main-content pt-5">
+          <div class="m-3 shadow p-3 bg-white rounded">
+            <h3 class="d-block mb-3">Tambah Pinjaman</h3>
+            <spam>Silahkan masukkan data, pinjaman anda dan tunggu persetujuan admin</spam>
+            <form action="" class="mt-5">
+              
+              <div class="form-group row">
+                <label for="jumlahpinjaman" class="col-md-2 col-form-label">Jumlah Pinjaman</label>
+                <div class="col-md-10">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Rp.</div>
+                    </div>
+                    <input type="text" class="form-control" id="jumlahpinjaman" placeholder="Total Pinjaman">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="jumlahangsur" class="col-md-2 col-form-label">Jumlah Angsuran</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="jumlahangsur" placeholder="Misal: 3">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="jumlahangsuran" class="col-md-2 col-form-label">Total Angsuran / Bulan</label>
+                <div class="col-md-10">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Rp.</div>
+                    </div>
+                    <input type="text" class="form-control" id="jumlahangsuran" placeholder="total angsuran perbulan">
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="d-sm-block d-md-flex justify-content-end mt-3">
+                <div class="col-sm-12 col-md-3 p-0 mr-md-3">
+                  <a href="#" class="btn btn-secondary btn-block">Batal</a>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-sm-2 mt-md-0 p-0">
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Kirim
+                  </button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--endform member-->
+    </div>
+  </body>
+  {% include "../agp-menu/agp-footer.html" %}
+</html>

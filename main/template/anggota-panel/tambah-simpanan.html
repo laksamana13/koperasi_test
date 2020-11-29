@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "../agp-menu/agp-header.html" %}
+  </head>
+  <body data-titlepage="tambahsimpanan">
+    <div class="wrapper">
+      {% include "../agp-menu/agp-body.html" %}
+      <!--form member-->
+      <div class="w-100 p-0 position-relative">
+        <!-- navbar -->
+        <nav class="d-flex justify-content-between navbars">
+          <div class="btn p-2">
+            <i class="fas fa-bars" id="menu-toggle"></i>
+          </div>
+          <div class="d-flex">
+            <div class="py-2 px-2">
+              <i
+                class="btn fas fa-bell"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item bg-primary text-light" href="#"
+                  >Transaksi Pinjaman Baru</a
+                >
+                <a class="dropdown-item" href="#">Anggota Baru Ditambahkan</a>
+                <a class="dropdown-item" href="#">Transaksi Simpanan Baru</a>
+              </div>
+              <i class="btn fas fa-sign-out-alt"></i>
+            </div>
+          </div>
+        </nav>
+        <!-- end navbar -->
+
+        <div class="main-content pt-5">
+          <div class="m-3 shadow p-3 bg-white rounded">
+            <h3 class="d-block mb-3">Tambah Simpanan</h3>
+            <span>tambahkan data simpanan anda</span>
+            
+            <form action="" class="mt-5">
+            
+              <div class="form-group row">
+                <label for="jumlahsimpanan" class="col-md-2 col-form-label">Jumlah Simpanan</label>
+                <div class="col-md-10">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Rp.</div>
+                    </div>
+                    <input type="text" class="form-control" id="jumlahsimpanan">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label for="bulan" class="col-md-2 col-form-label">Jadwal Pada Bulan</label>
+                <div class="col-sm-6 col-md-5">
+                  <select id="bulan" name="bulan" class="form-control">
+                    <option selected >Pilih Bulan...</option>
+                    <option value="januari">Januari</option>
+                    <option value="februari">Fabruari</option>
+                    <option value="maret">Maret</option>
+                    <option value="april">April</option>
+                    <option value="mei">Mei</option>
+                    <option value="juni" >Juni</option>
+                    <option value="juli">Juli</option>
+                    <option value="agustus">Agustus</option>
+                    <option value="september" >September</option>
+                    <option value="oktober">Oktober</option>
+                    <option value="november">November</option>
+                    <option value="desember" >Desember</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 col-md-5">
+                  <select id="yearsimpanan" name="tahun" class="form-control">
+                    <option selected>Pilih Tahun...</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="jenissimpanan" class="col-md-2 col-form-label">Jenis Simpanan</label>
+                <div class="col-md-10">
+                  <select id="jenissimpanan" name="jenissimpanan" class="form-control">
+                    <option selected >Pilih Jenis...</option>
+                    <option value="pokok">Pokok</option>
+                    <option value="wajib">Wajib</option>
+                  </select>
+                </div>
+              </div> 
+
+              <div class="d-sm-block d-md-flex justify-content-end mt-3">
+                <div class="col-sm-12 col-md-3 p-0 mr-md-3">
+                  <a href="#" class="btn btn-secondary btn-block">Batal</a>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-sm-2 mt-md-0 p-0">
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Kirim
+                  </button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--endform member-->
+    </div>
+  </body>
+  {% include "../agp-menu/agp-footer.html" %}
+</html>

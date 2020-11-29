@@ -1,0 +1,174 @@
+
+
+
+/* ==================================DASHBOard========================== */
+.wraplogocardstat{
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  margin-top: -35px;
+  right: -30px;
+  position: absolute;
+}
+.wraplogored{
+  background-color: rgba(255, 89, 74, 0.8);
+}
+.wraplogogreen{
+  background-color: rgba(0, 227, 95, 0.6);
+}
+.wraplogoyellow{
+  background-color: rgba(4, 125, 255, 0.8);
+}
+.logocardstat{
+  margin-top: 30px;
+  margin-left: 20px;
+  color:rgba(255,255,255, 0.5);
+}
+.card1{
+  font-size: 1.3em;
+  background-color: rgba(220, 53, 69, 1) !important;
+  color: rgba(255, 255, 255, 1);
+}
+.card2{
+  font-size: 1.3em;
+  background-color: rgba(40, 167, 69, 1) !important;
+  color: rgba(255, 255, 255, 1);
+}
+.card3{
+  font-size: 1.3em;
+  background-color: rgb(4, 0, 255) !important;
+  color: rgba(255, 255, 255, 1);
+}
+.cardstat{
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.cardstatkosong{
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  font-size:1.5em ;
+}
+.chartcard{
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px !important;
+}
+.labelsm{
+  font-size: 0.7em;
+}
+
+/* CHART */
+/* bar cHart */
+.ct-series-a .ct-bar{
+  stroke: #1665D8;
+  stroke-width: 25px;
+}
+.fontlabelkanan{
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+/* chart donut */
+.ct-series-a .ct-slice-donut-solid{
+  fill: #1070CA ;
+}
+.ct-series-b .ct-slice-donut-solid{
+  fill: #EC4C47 ;
+}
+.ct-series-c .ct-slice-donut-solid{
+  fill: #F7D154 ;
+}
+.ct-chart-donut .ct-label{
+  fill: honeydew;
+}
+
+/* ================================END DASHBOARD======================== */
+
+
+
+
+
+
+
+/* =================================DETAIL USERS========================== */
+.maxminbt{
+  padding: 13px;
+  color:#007bff;
+}
+.ct-series-a .ct-line {
+  stroke: #EC4C47;
+  stroke-width: 5px;
+}
+.profil-detailuser{
+  width: 200px;
+  height: 250px;
+}
+.user-details .user-info-block {
+    width: 100%; position: absolute; top: 55px; background: rgb(255, 255, 255); z-index: 0; padding-top: 35px;
+}
+.user-info-block .user-heading {
+    width: 100%; text-align: center; margin: 10px 0 0;
+}
+.user-info-block .navigationdetailuser {
+    float: left; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    border-bottom: 1px solid #007bff; 
+    border-top: 1px solid #007bff;
+}
+.navigationdetailuser li { 
+    padding: 3px 20px 3px 20px;
+    text-align: center;
+    color: #007bff; 
+    cursor: pointer;
+}
+.navigationdetailuser li:hover {
+    color: #0057a4; 
+    transition: .5s;
+}
+.navigationdetailuser li a {
+    padding: 5px 10px; 
+    float: left;
+}
+.navigationdetailuser li.active {
+    background: #007bff; 
+    color: #fff;
+}
+.active-tabpane{
+    display: block;
+}
+.wrapper-labelchart{
+  position: absolute;
+  top: 103px;
+  left: 110px;
+}
+.wrapper-labelchart li{
+  display: flex;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.wrapper-labelchart li:hover{
+  transform: scale(1.2);
+}
+.itemlabelchart{
+  margin-top: 6px;
+  margin-right: 3px;
+  width: 13px;
+  height: 13px;
+}
+.fnt-sm{
+  font-size: 0.9em !important;
+}
+.item1{
+  background-color: #007bff;
+}
+.item2{
+  background-color: #EC4C47 ;
+}
+.item3{
+  background-color: #F7D154 ;
+}
+/* =================================DETAIL USERS========================== */

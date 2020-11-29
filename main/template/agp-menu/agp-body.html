@@ -1,0 +1,113 @@
+<!-- sidebar -->
+<div class="sidebar bg-main shadow-lg text-light custom-scrollbar">
+  <div class="d-flex pl-2 py-1 border-bottom">
+    <img
+      src="/static/lib/img/logo.png"
+      alt="KOPERASI UNIWA"
+      class="logo-navbar"
+    />
+    <span
+      class="align-items-start vendor-title ml-2 font-weight-light hiddenlabel"
+      >KOPERASI</span
+    >
+  </div>
+  <!-- profil -->
+  <div class="d-flex flex-row border-bottom border-light pl-2 py-3">
+    <img
+      class="foto-profil rounded-circle"
+      id="fotoprofil"
+      alt="nama_user"
+      src="/static/lib/img/fotoprofil.jpg"
+    />
+    <div class="pt-2 pl-2 hiddenlabel">
+      <span class="m-0 d-block font-weight-bold">AndiNa</span>
+      <span class="title">Anggota</span>
+    </div>
+  </div>
+  <!-- end profil -->
+  <ul class="list-group border-0 list-group-flush py-2">
+    <li>
+      <a
+        href="/"
+        class="{% if active_page == 'dashboard' %} navitemLinkactive {%else%} navitemLink {%endif%} btn btn-block text-left text-light rounded-0"
+        id="dashboardtab"
+      >
+        <i class="fas fa-columns"></i>
+        <span class="item-sm-hidden">
+          Dashboard
+        </span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        class="btn btn-block text-left text-light navitemLink rounded-0"
+      >
+        <i class="fas fa-landmark"></i>
+        <span class="item-sm-hidden">Koperasi</span>
+      </a>
+    </li>
+
+    <li
+      class="navitem-collapse"
+      area-collapse="simpananCollapse"
+      btn-collapse="pemasukanCl"
+    >
+      <span
+        class="btn btn-block text-left d-flex justify-content-between navitemCollapse"
+      >
+        <span>
+          <i class="fas fa-database"></i>
+          <span class="item-sm-hidden">Saldo</span>
+        </span>
+        <i class="fas fa-angle-left mt-1 tg-cl" id="pemasukanCl"></i>
+      </span>
+    </li>
+    <div
+      class="pl-4 text-sm-left bg-maindark hidden-item"
+      id="simpananCollapse"
+    >
+      <ul>
+        <li>
+          <a
+            href="/simpanan"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-money-bill-alt"></i>
+            <span class="item-sm-hidden">Simpanan</span>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="btn btn-block text-left text-light navitemLink rounded-0"
+          >
+            <i class="fas fa-comments-dollar"></i>
+            <span class="item-sm-hidden">Pinjaman</span>
+          </a>
+        </li>
+        </li>
+      </ul>
+    </div>
+    <li>
+      <a
+        href="#"
+        class="btn btn-block text-left text-light navitemLink rounded-0"
+      >
+        <i class="fas fa-chart-line"></i>
+        <span class="item-sm-hidden">Histori Transaksi</span>
+      </a>
+    </li>
+    <li>
+    <a
+      href="#"
+      class="btn btn-block text-left text-light navitemLink rounded-0"
+    >
+      <i class="fas fa-cogs"></i>
+      <span class="item-sm-hidden">Pengaturan</span>
+    </a>
+  </li>
+  </ul>
+</div>
+<!-- end sidebar -->

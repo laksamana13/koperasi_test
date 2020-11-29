@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "../agp-menu/agp-header.html" %}
+  </head>
+  <body data-titlepage="simpanan">
+    <div class="wrapper">
+      {% include "../agp-menu/agp-body.html" %}
+      <!--form member-->
+      <div class="w-100 p-0 position-relative">
+        <!-- navbar -->
+        <nav class="d-flex justify-content-between navbars">
+          <div class="btn p-2">
+            <i class="fas fa-bars" id="menu-toggle"></i>
+          </div>
+          <div class="d-flex">
+            <div class="py-2 px-2">
+              <i
+                class="btn fas fa-bell"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></i>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item bg-primary text-light" href="#"
+                  >Transaksi Pinjaman Baru</a
+                >
+                <a class="dropdown-item" href="#">Anggota Baru Ditambahkan</a>
+                <a class="dropdown-item" href="#">Transaksi Simpanan Baru</a>
+              </div>
+              <i class="btn fas fa-sign-out-alt"></i>
+            </div>
+          </div>
+        </nav>
+        <!-- end navbar -->
+
+        <div class="main-content pt-5">
+          <div class="m-3 shadow p-3 bg-white rounded">
+            <h3 class="d-block mb-3">Pinjaman Anda</h3>
+            <table
+              class="bg-white"
+              id="tabelanggota"
+              data-toggle="table"
+              data-show-columns="true"
+              data-search="true"
+              data-show-toggle="true"
+              data-resizable="true"
+              data-pagination="true"
+            >
+              <thead>
+                <tr class="">
+                  <th scope="col" data-sortable="true">No</th>
+                  <th scope="col" data-sortable="true">Nomor Transaksi</th>
+                  <th scope="col" data-sortable="true">Penerima</th>
+                  <th scope="col" data-sortable="true">Total Pinjaman</th>
+                  <th scope="col" data-sortable="true">Jumlah Angsuran</th>
+                  <th scope="col" data-sortable="true">Angsuran Perbulan</th>
+                  <th scope="col" data-sortable="true">Status</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>0992</td>
+                  <td>Annnizar</td>
+                  <td>Rp. 200.000</td>
+                  <td>5</td>
+                  <td>Rp. 44.000</td>
+                  <td class="pt-2">
+                    <span class="bg-success px-2 py-1 rounded text-light"
+                      >Lunas</span
+                    >
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-secondary">selesai</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>0566</td>
+                  <td>Annizar</td>
+                  <td>Rp. 200.000</td>
+                  <td>4</td>
+                  <td>Rp. 55.0000</td>
+                  <td class="pt-2">
+                    <span class="bg-danger px-2 py-1 rounded text-light"
+                      >Belum Lunas</span
+                    >
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-primary">angsur</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>0992</td>
+                  <td>Annnizar</td>
+                  <td>Rp. 100.000</td>
+                  <td>2</td>
+                  <td>55.000</td>
+                  <td class="pt-2">
+                    <span class="bg-success px-2 py-1 rounded text-light"
+                      >Lunas</span
+                    >
+                  </td>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-secondary">selesai</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+      </div>
+      <!--endform member-->
+    </div>
+  </body>
+  {% include "../agp-menu/agp-footer.html" %}
+</html>

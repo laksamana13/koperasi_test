@@ -3,9 +3,9 @@
   <head>
     {% include "../adp-menu/adp-header.html" %}
   </head>
-  <body>
+  <body data-titlepage="anggota">
     <div class="wrapper">
-      {% include "../adp-menu/adp-body.html" %}
+      {% include "../adp-menu/adp-body.html" with active_page="anggota" %}
       <!--list member-->
       <div class="w-100 p-0 position-relative">
         <!-- navbar -->
@@ -38,7 +38,7 @@
           <div class="m-3 shadow p-3 bg-light">
             <div class="text-right d-flex justify-content-between">
               <h3>Anggota</h3>
-              <a href="tambahanggota.html" class="btn btn-primary"
+              <a href="/tambah-anggota" class="btn btn-primary"
                 >Tambah Anggota</a
               >
             </div>
